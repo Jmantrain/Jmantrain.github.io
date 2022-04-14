@@ -1,0 +1,76 @@
+:root {
+    --grey-color: #E4E7E0;
+    --black-color: #050505;
+    --light-green-color: rgb(170, 225, 165);
+    --dark-green-color: #67BD48;
+    --button-hover-text-color: rgba(5, 5, 5, 0.7);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    color: var(--black-color, #000);
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* Bootstrap Overrides */
+
+    /* Navbar */
+
+    .navbar {
+        background-color: white;
+        min-height: 4.5rem;
+    }
+    
+    .nav-link, .navbar-light .navbar-nav .nav-link {
+        color: var(--black-color, black);
+    }
+    
+    .nav-link:hover {
+        color: var(--button-hover-text-color, rgb(88, 88, 88))
+    }
+
+    /* Buttons */
+
+    .btn-primary {
+        background-color: var(--light-green-color, lightgreen);
+        border-color: var(--light-green-color, lightgreen);
+        color: var(--black-color, black);
+    }
+
+    .btn-primary:hover,
+    .btn-primary:active,
+    .btn-primary:focus {
+        background-color: var(--dark-green-color, green);
+        border-color: var(--dark-green-color, green);
+        color: var(--button-hover-text-color, rgb(88, 88, 88));
+    }
+
+    .btn-primary:visited {
+        background-color: var(--dark-green-color, green);
+        border-color: var(--dark-green-color, green);
+        color: var(--button-hover-text-color, rgb(88, 88, 88));
+    }
+
+    /* Modal */
+
+    .modal-header {
+        padding: .5rem 1rem;
+    }
+
+    .modal-footer {
+        padding: .25rem;
+    }
+
+/* Navbar */
+
+    #logo {
+        height: 3rem;
+    }
+
+/* Footer */
+
+.footer-base {
+    background-color: var(--light-green-color, lightgreen);
+    min-height: 8vh;
+}
