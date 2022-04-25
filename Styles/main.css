@@ -1,14 +1,16 @@
 :root {
-    --grey-color: #E4E7E0;
+    --white-color: #f5f5f5;
     --black-color: #050505;
-    --light-green-color: rgb(170, 225, 165);
-    --dark-green-color: #67BD48;
-    --button-hover-text-color: rgba(5, 5, 5, 0.7);
+    --primary-color-light: #f4605a;
+    --primary-color: #CC4742;
+    --button-text-color: #ffffff;
+    --link-hover-text-color: #585858;
 }
 
 html, body {
     height: 100%;
     width: 100%;
+    color: var(--black-color, #000000);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -22,7 +24,7 @@ html, body {
     /* Navbar */
 
     .navbar {
-        background-color: white;
+        background-color: var(--white-color, #f5f5f5);
         min-height: 4.5rem;
         box-shadow: 0 -5px 5px 5px #888888;
     }
@@ -32,7 +34,7 @@ html, body {
     }
     
     .nav-link:hover {
-        color: var(--button-hover-text-color, rgb(88, 88, 88))
+        color: var(--link-hover-text-color, #585858)
     }
 
     /* Buttons */
@@ -46,15 +48,9 @@ html, body {
     .btn-primary:hover,
     .btn-primary:active,
     .btn-primary:focus {
-        background-color: var(--dark-green-color, green);
-        border-color: var(--dark-green-color, green);
-        color: var(--button-hover-text-color, rgb(88, 88, 88));
-    }
-
-    .btn-primary:visited {
-        background-color: var(--dark-green-color, green);
-        border-color: var(--dark-green-color, green);
-        color: var(--button-hover-text-color, rgb(88, 88, 88));
+        background-color: var(--primary-color, #CC4742);
+        border-color: var(--primary-color, #CC4742);
+        color: var(--button-text-color, #585858);
     }
 
     /* Modal */
@@ -76,6 +72,6 @@ html, body {
 /* Footer */
 
 .footer-base {
-    background-color: var(--light-green-color, lightgreen);
+    background-color: var(--white-color, #f5f5f5);
     min-height: 8vh;
 }
