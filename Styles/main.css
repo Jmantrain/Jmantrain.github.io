@@ -39,12 +39,7 @@ html, body {
 
     /* Buttons */
 
-    .btn-primary {
-        background-color: var(--light-green-color, lightgreen);
-        border-color: var(--light-green-color, lightgreen);
-        color: var(--black-color, black);
-    }
-
+    .btn-primary,
     .btn-primary:hover,
     .btn-primary:active,
     .btn-primary:focus {
