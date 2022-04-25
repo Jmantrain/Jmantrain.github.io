@@ -9,8 +9,12 @@
 html, body {
     height: 100%;
     width: 100%;
-    color: var(--black-color, #000);
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-font {
+    font-family: 'Merriweather', serif;
+}
 }
 
 /* Bootstrap Overrides */
