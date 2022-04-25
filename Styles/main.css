@@ -17,6 +17,9 @@ html, body {
 .header-font {
     font-family: 'Merriweather', serif;
 }
+
+.image {
+    width: 100%;
 }
 
 /* Bootstrap Overrides */
