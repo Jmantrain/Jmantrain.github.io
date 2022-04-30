@@ -20,6 +20,9 @@ html, body {
 
 .image {
     width: 100%;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 /* Bootstrap Overrides */
