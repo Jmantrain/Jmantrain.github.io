@@ -51,13 +51,17 @@ html, body {
 
     /* Buttons */
 
-    .btn-primary,
-    .btn-primary:hover,
-    .btn-primary:active,
-    .btn-primary:focus {
+    .btn-primary {
         background-color: var(--primary-color, #CC4742);
         border-color: var(--primary-color, #CC4742);
         color: var(--button-text-color, #585858);
+    }
+
+    .btn-primary:hover,
+    .btn-primary:active,
+    .btn-primary:focus {
+        background-color: var(--primary-color-light, #f4605a);
+        border-color: var(--primary-color-light, #f4605a);
     }
 
     /* Modal */
