@@ -45,6 +45,10 @@ html, body {
         color: var(--link-hover-text-color, #585858)
     }
 
+    .navbar-light .navbar-toggler {
+        border-color: rgba(0,0,0,0);
+    }
+
     /* Buttons */
 
     .btn-primary,
