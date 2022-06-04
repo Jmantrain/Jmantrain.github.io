@@ -31,6 +31,11 @@ html, body {
     max-height: 25vh;
     min-height: 25vh;
 }
+
+q {
+    font-style: italic;
+}
+
 .testimony-image-cover {
     aspect-ratio: 1 / 1;
 }
