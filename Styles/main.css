@@ -17,6 +17,20 @@ html, body {
     font-family: 'Merriweather', serif;
 }
 
+.landing-section {
+    max-height: 65vh;
+    min-height: 65vh;
+    background-image: url("/Assets/LandingImage.jpg");
+    background-color: #CC4742;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.landing-quote {
+    max-height: 25vh;
+    min-height: 25vh;
+}
 .testimony-image-cover {
     aspect-ratio: 1 / 1;
 }
