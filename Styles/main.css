@@ -60,6 +60,14 @@ q {
         min-height: 4.5rem;
     }
 
+    ul.dropdown-menu.show {
+        background-color: var(--white-color, #f5f5f5);
+    }
+
+    .dropdown-menu .dropdown-item:active {
+        background-color: var(--primary-color, #CC4742);
+    }
+
     .navbar-shadow {
         box-shadow: 0 -5px 5px 5px #888888;
     }
