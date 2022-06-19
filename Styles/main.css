@@ -47,6 +47,10 @@ q {
     object-fit: cover;
 }
 
+.certification-image {
+    max-width: 200px;
+}
+
 /* Bootstrap Overrides */
 
     /* Navbar */
