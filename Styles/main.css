@@ -23,7 +23,7 @@ html, body {
     min-height: 65vh;
     background-image: url("/Assets/LandingImage.jpg");
     background-color: #CC4742;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
 }
