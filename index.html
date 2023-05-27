@@ -58,7 +58,7 @@
     <header class="container-fluid gx-0" id="landing">
         <div class="landing-section d-flex align-items-center">
             <div class="row container-fluid g-0">
-                <div class="col-lg-6 col-md-7 col-sm-9 text-center px-5">
+                <div class="col-lg-6 col-md-7 col-sm-9 text-center px-5" id="flexheader">
                     <h2 class="header-font">Do you need more clarity or energy to deal with your personal or leadership challenges?</h2>
                     <h2 class="header-font">Do you need a road map to get you where you want to go?</h2>
                     <!-- Calendly link widget begin -->
@@ -220,6 +220,32 @@
     n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
     (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
     ml('account', '28340');
+</script>
+<script type="text/javascript">
+    function applyFlexHeader() {
+        let height = window.innerHeight;
+        console.log(height);
+        let flexheader = document.getElementById("flexheader");
+        flexheader.classList.remove("col-xxl-6", "col-xl-9", "col-xl-6", "col-lg-10", "col-lg-6", "col-md-10", "col-md-6");
+
+        if (height < 768) {
+            return flexheader.classList.add("col-md-6");
+        }
+        else if (height > 768 && height < 992) {
+            return flexheader.classList.add("col-lg-6", "col-md-10");
+        }
+        else if (height > 992 && height < 1200) {
+            return flexheader.classList.add("col-xl-6", "col-lg-10");
+        }
+        else if (height > 1200) {
+            return flexheader.classList.add("col-xxl-6", "col-xl-9");
+        }
+    }
+    window.onload = () => { 
+        console.log("Hello")
+        applyFlexHeader()
+        window.addEventListener('resize', applyFlexHeader);
+    }
 </script>
 <!-- End MailerLite Universal -->
 </body>
